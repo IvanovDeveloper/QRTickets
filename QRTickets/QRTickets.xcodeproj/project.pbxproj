@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DAC7CF7377AFEDFF1E4DC7C /* libPods-QRTickets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F74D30C2833CA55DB20F23 /* libPods-QRTickets.a */; };
+		779E1A5475EA194AE86F55B8 /* libPods-QRTicketsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E428AE5682EBD342032821 /* libPods-QRTicketsUITests.a */; };
+		B329A3781D3D233300422793 /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B329A3771D3D233300422793 /* Helpers.m */; };
+		B3C2DC521D3E153A0019B619 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C2DC511D3E153A0019B619 /* BaseViewController.m */; };
+		B3C2DC561D3E16F00019B619 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C2DC551D3E16F00019B619 /* MainViewController.m */; };
+		B3C2DC691D3E25F30019B619 /* TicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C2DC671D3E25F30019B619 /* TicketCell.m */; };
+		B3C2DC6A1D3E25F30019B619 /* TicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3C2DC681D3E25F30019B619 /* TicketCell.xib */; };
+		B3C2DC751D3E4F240019B619 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C2DC741D3E4F240019B619 /* Model.m */; };
+		B3CCB8981D46033C00066027 /* ChooseTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CCB8971D46033C00066027 /* ChooseTicketViewController.m */; };
+		B3D154751D42779700E8F043 /* Transaction+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D1546E1D42779700E8F043 /* Transaction+CoreDataProperties.m */; };
+		B3D154761D42779700E8F043 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D154701D42779700E8F043 /* Transaction.m */; };
+		B3D154771D42779700E8F043 /* Ticket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D154721D42779700E8F043 /* Ticket+CoreDataProperties.m */; };
+		B3D154781D42779700E8F043 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D154741D42779700E8F043 /* Ticket.m */; };
+		B3D4F4721D4752AF00A4E24A /* TransactionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D4F4711D4752AF00A4E24A /* TransactionsViewController.m */; };
+		B3D4F4751D4756E100A4E24A /* TransactionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D4F4741D4756E100A4E24A /* TransactionCell.m */; };
+		B3F766C71D3D0712006EF124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F766C61D3D0712006EF124 /* main.m */; };
+		B3F766CA1D3D0712006EF124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F766C91D3D0712006EF124 /* AppDelegate.m */; };
+		B3F766D01D3D0712006EF124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F766CE1D3D0712006EF124 /* Main.storyboard */; };
+		B3F766D31D3D0712006EF124 /* QRTickets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3F766D11D3D0712006EF124 /* QRTickets.xcdatamodeld */; };
+		B3F766D51D3D0712006EF124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F766D41D3D0712006EF124 /* Assets.xcassets */; };
+		B3F766D81D3D0712006EF124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F766D61D3D0712006EF124 /* LaunchScreen.storyboard */; };
+		B3F766E31D3D0712006EF124 /* QRTicketsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F766E21D3D0712006EF124 /* QRTicketsTests.m */; };
+		B3F766EE1D3D0712006EF124 /* QRTicketsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F766ED1D3D0712006EF124 /* QRTicketsUITests.m */; };
+		B3F766FF1D3D0AF0006EF124 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F766FE1D3D0AF0006EF124 /* DBManager.m */; };
+		C1116BAA64A4A0BD85D83C9D /* libPods-QRTicketsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D049CEEF345A2D5E05ECD084 /* libPods-QRTicketsTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3F766DF1D3D0712006EF124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F766BA1D3D0712006EF124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F766C11D3D0712006EF124;
+			remoteInfo = QRTickets;
+		};
+		B3F766EA1D3D0712006EF124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F766BA1D3D0712006EF124 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F766C11D3D0712006EF124;
+			remoteInfo = QRTickets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26F0575E8F13BC12AD928234 /* Pods-QRTickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRTickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRTickets/Pods-QRTickets.release.xcconfig"; sourceTree = "<group>"; };
+		61F74D30C2833CA55DB20F23 /* libPods-QRTickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QRTickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E18770AC305F54EB98CCF78 /* Pods-QRTicketsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRTicketsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRTicketsTests/Pods-QRTicketsTests.release.xcconfig"; sourceTree = "<group>"; };
+		799CA7B0CFD86A2CCF69AFFA /* Pods-QRTickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRTickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRTickets/Pods-QRTickets.debug.xcconfig"; sourceTree = "<group>"; };
+		88E428AE5682EBD342032821 /* libPods-QRTicketsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QRTicketsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C972563B7751F78AEA1057 /* Pods-QRTicketsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRTicketsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRTicketsUITests/Pods-QRTicketsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B329A3761D3D233300422793 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Helpers.h; path = Helpers/Helpers.h; sourceTree = "<group>"; };
+		B329A3771D3D233300422793 /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Helpers.m; path = Helpers/Helpers.m; sourceTree = "<group>"; };
+		B3C2DC501D3E153A0019B619 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ViewControllers/BaseViewController.h; sourceTree = "<group>"; };
+		B3C2DC511D3E153A0019B619 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewControllers/BaseViewController.m; sourceTree = "<group>"; };
+		B3C2DC541D3E16F00019B619 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewControllers/MainViewController.h; sourceTree = "<group>"; };
+		B3C2DC551D3E16F00019B619 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/MainViewController.m; sourceTree = "<group>"; };
+		B3C2DC581D3E1BA80019B619 /* DevelopingInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DevelopingInfo.h; path = "Supporting Files/DevelopingInfo.h"; sourceTree = "<group>"; };
+		B3C2DC5A1D3E1E0D0019B619 /* Macroses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macroses.h; sourceTree = "<group>"; };
+		B3C2DC661D3E25F30019B619 /* TicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketCell.h; path = Subviews/Cells/TicketCell.h; sourceTree = "<group>"; };
+		B3C2DC671D3E25F30019B619 /* TicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketCell.m; path = Subviews/Cells/TicketCell.m; sourceTree = "<group>"; };
+		B3C2DC681D3E25F30019B619 /* TicketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TicketCell.xib; path = Subviews/Cells/TicketCell.xib; sourceTree = "<group>"; };
+		B3C2DC731D3E4F240019B619 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Model/Model.h; sourceTree = "<group>"; };
+		B3C2DC741D3E4F240019B619 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Model/Model.m; sourceTree = "<group>"; };
+		B3CCB8961D46033C00066027 /* ChooseTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChooseTicketViewController.h; path = ViewControllers/ChooseTicketViewController.h; sourceTree = "<group>"; };
+		B3CCB8971D46033C00066027 /* ChooseTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChooseTicketViewController.m; path = ViewControllers/ChooseTicketViewController.m; sourceTree = "<group>"; };
+		B3D1546D1D42779700E8F043 /* Transaction+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Transaction+CoreDataProperties.h"; path = "DB/_Entities/Transaction+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B3D1546E1D42779700E8F043 /* Transaction+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Transaction+CoreDataProperties.m"; path = "DB/_Entities/Transaction+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B3D1546F1D42779700E8F043 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transaction.h; path = DB/_Entities/Transaction.h; sourceTree = "<group>"; };
+		B3D154701D42779700E8F043 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transaction.m; path = DB/_Entities/Transaction.m; sourceTree = "<group>"; };
+		B3D154711D42779700E8F043 /* Ticket+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Ticket+CoreDataProperties.h"; path = "DB/_Entities/Ticket+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B3D154721D42779700E8F043 /* Ticket+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Ticket+CoreDataProperties.m"; path = "DB/_Entities/Ticket+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B3D154731D42779700E8F043 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ticket.h; path = DB/_Entities/Ticket.h; sourceTree = "<group>"; };
+		B3D154741D42779700E8F043 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ticket.m; path = DB/_Entities/Ticket.m; sourceTree = "<group>"; };
+		B3D4F4701D4752AF00A4E24A /* TransactionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionsViewController.h; path = ViewControllers/TransactionsViewController.h; sourceTree = "<group>"; };
+		B3D4F4711D4752AF00A4E24A /* TransactionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionsViewController.m; path = ViewControllers/TransactionsViewController.m; sourceTree = "<group>"; };
+		B3D4F4731D4756E100A4E24A /* TransactionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionCell.h; path = Subviews/Cells/TransactionCell.h; sourceTree = "<group>"; };
+		B3D4F4741D4756E100A4E24A /* TransactionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionCell.m; path = Subviews/Cells/TransactionCell.m; sourceTree = "<group>"; };
+		B3F766C21D3D0712006EF124 /* QRTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F766C61D3D0712006EF124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3F766C81D3D0712006EF124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3F766C91D3D0712006EF124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3F766CF1D3D0712006EF124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3F766D21D3D0712006EF124 /* QRTickets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QRTickets.xcdatamodel; sourceTree = "<group>"; };
+		B3F766D41D3D0712006EF124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = QRTickets/Assets.xcassets; sourceTree = "<group>"; };
+		B3F766D71D3D0712006EF124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3F766D91D3D0712006EF124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F766DE1D3D0712006EF124 /* QRTicketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRTicketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F766E21D3D0712006EF124 /* QRTicketsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRTicketsTests.m; sourceTree = "<group>"; };
+		B3F766E41D3D0712006EF124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F766E91D3D0712006EF124 /* QRTicketsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRTicketsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F766ED1D3D0712006EF124 /* QRTicketsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRTicketsUITests.m; sourceTree = "<group>"; };
+		B3F766EF1D3D0712006EF124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F766FD1D3D0AF0006EF124 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = DB/DBManager.h; sourceTree = "<group>"; };
+		B3F766FE1D3D0AF0006EF124 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = DB/DBManager.m; sourceTree = "<group>"; };
+		B3F767011D3D0D44006EF124 /* QRTickets-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QRTickets-PrefixHeader.pch"; sourceTree = "<group>"; };
+		D049CEEF345A2D5E05ECD084 /* libPods-QRTicketsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QRTicketsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5605B5055E183CE6CB2DB0E /* Pods-QRTicketsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRTicketsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRTicketsTests/Pods-QRTicketsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6AD94CCDF6F7B07220CA192 /* Pods-QRTicketsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRTicketsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRTicketsUITests/Pods-QRTicketsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3F766BF1D3D0712006EF124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAC7CF7377AFEDFF1E4DC7C /* libPods-QRTickets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F766DB1D3D0712006EF124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1116BAA64A4A0BD85D83C9D /* libPods-QRTicketsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F766E61D3D0712006EF124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				779E1A5475EA194AE86F55B8 /* libPods-QRTicketsUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09AC87167BD6F1065088A00F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61F74D30C2833CA55DB20F23 /* libPods-QRTickets.a */,
+				D049CEEF345A2D5E05ECD084 /* libPods-QRTicketsTests.a */,
+				88E428AE5682EBD342032821 /* libPods-QRTicketsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F5F5C0B230221B57E82A464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				799CA7B0CFD86A2CCF69AFFA /* Pods-QRTickets.debug.xcconfig */,
+				26F0575E8F13BC12AD928234 /* Pods-QRTickets.release.xcconfig */,
+				E5605B5055E183CE6CB2DB0E /* Pods-QRTicketsTests.debug.xcconfig */,
+				6E18770AC305F54EB98CCF78 /* Pods-QRTicketsTests.release.xcconfig */,
+				F6AD94CCDF6F7B07220CA192 /* Pods-QRTicketsUITests.debug.xcconfig */,
+				A9C972563B7751F78AEA1057 /* Pods-QRTicketsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B329A3751D3D1E0E00422793 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC5A1D3E1E0D0019B619 /* Macroses.h */,
+				B329A3761D3D233300422793 /* Helpers.h */,
+				B329A3771D3D233300422793 /* Helpers.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B3C2DC531D3E15B10019B619 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC571D3E16FA0019B619 /* Base */,
+				B3C2DC541D3E16F00019B619 /* MainViewController.h */,
+				B3C2DC551D3E16F00019B619 /* MainViewController.m */,
+				B3CCB8961D46033C00066027 /* ChooseTicketViewController.h */,
+				B3CCB8971D46033C00066027 /* ChooseTicketViewController.m */,
+				B3D4F4701D4752AF00A4E24A /* TransactionsViewController.h */,
+				B3D4F4711D4752AF00A4E24A /* TransactionsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B3C2DC571D3E16FA0019B619 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC501D3E153A0019B619 /* BaseViewController.h */,
+				B3C2DC511D3E153A0019B619 /* BaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		B3C2DC5C1D3E24560019B619 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC5D1D3E24640019B619 /* Cells */,
+			);
+			name = SubViews;
+			sourceTree = "<group>";
+		};
+		B3C2DC5D1D3E24640019B619 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC661D3E25F30019B619 /* TicketCell.h */,
+				B3C2DC671D3E25F30019B619 /* TicketCell.m */,
+				B3C2DC681D3E25F30019B619 /* TicketCell.xib */,
+				B3D4F4731D4756E100A4E24A /* TransactionCell.h */,
+				B3D4F4741D4756E100A4E24A /* TransactionCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B3C2DC6B1D3E27CF0019B619 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1546D1D42779700E8F043 /* Transaction+CoreDataProperties.h */,
+				B3D1546E1D42779700E8F043 /* Transaction+CoreDataProperties.m */,
+				B3D1546F1D42779700E8F043 /* Transaction.h */,
+				B3D154701D42779700E8F043 /* Transaction.m */,
+				B3D154711D42779700E8F043 /* Ticket+CoreDataProperties.h */,
+				B3D154721D42779700E8F043 /* Ticket+CoreDataProperties.m */,
+				B3D154731D42779700E8F043 /* Ticket.h */,
+				B3D154741D42779700E8F043 /* Ticket.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B3C2DC721D3E4EFE0019B619 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC731D3E4F240019B619 /* Model.h */,
+				B3C2DC741D3E4F240019B619 /* Model.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B3F766B91D3D0712006EF124 = {
+			isa = PBXGroup;
+			children = (
+				B3F766CE1D3D0712006EF124 /* Main.storyboard */,
+				B3F766D41D3D0712006EF124 /* Assets.xcassets */,
+				B3F766C41D3D0712006EF124 /* QRTickets */,
+				B3F766E11D3D0712006EF124 /* QRTicketsTests */,
+				B3F766EC1D3D0712006EF124 /* QRTicketsUITests */,
+				B3F766C31D3D0712006EF124 /* Products */,
+				1F5F5C0B230221B57E82A464 /* Pods */,
+				09AC87167BD6F1065088A00F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3F766C31D3D0712006EF124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3F766C21D3D0712006EF124 /* QRTickets.app */,
+				B3F766DE1D3D0712006EF124 /* QRTicketsTests.xctest */,
+				B3F766E91D3D0712006EF124 /* QRTicketsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3F766C41D3D0712006EF124 /* QRTickets */ = {
+			isa = PBXGroup;
+			children = (
+				B3F766C81D3D0712006EF124 /* AppDelegate.h */,
+				B3F766C91D3D0712006EF124 /* AppDelegate.m */,
+				B3F766FC1D3D0AB2006EF124 /* DB */,
+				B329A3751D3D1E0E00422793 /* Helpers */,
+				B3C2DC721D3E4EFE0019B619 /* Model */,
+				B3C2DC531D3E15B10019B619 /* ViewControllers */,
+				B3C2DC5C1D3E24560019B619 /* SubViews */,
+				B3F766C51D3D0712006EF124 /* Supporting Files */,
+			);
+			path = QRTickets;
+			sourceTree = "<group>";
+		};
+		B3F766C51D3D0712006EF124 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3F766D61D3D0712006EF124 /* LaunchScreen.storyboard */,
+				B3F766C61D3D0712006EF124 /* main.m */,
+				B3F767011D3D0D44006EF124 /* QRTickets-PrefixHeader.pch */,
+				B3C2DC581D3E1BA80019B619 /* DevelopingInfo.h */,
+				B3F766D91D3D0712006EF124 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3F766E11D3D0712006EF124 /* QRTicketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F766E21D3D0712006EF124 /* QRTicketsTests.m */,
+				B3F766E41D3D0712006EF124 /* Info.plist */,
+			);
+			path = QRTicketsTests;
+			sourceTree = "<group>";
+		};
+		B3F766EC1D3D0712006EF124 /* QRTicketsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F766ED1D3D0712006EF124 /* QRTicketsUITests.m */,
+				B3F766EF1D3D0712006EF124 /* Info.plist */,
+			);
+			path = QRTicketsUITests;
+			sourceTree = "<group>";
+		};
+		B3F766FC1D3D0AB2006EF124 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				B3C2DC6B1D3E27CF0019B619 /* Entities */,
+				B3F766D11D3D0712006EF124 /* QRTickets.xcdatamodeld */,
+				B3F766FD1D3D0AF0006EF124 /* DBManager.h */,
+				B3F766FE1D3D0AF0006EF124 /* DBManager.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3F766C11D3D0712006EF124 /* QRTickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F766F21D3D0712006EF124 /* Build configuration list for PBXNativeTarget "QRTickets" */;
+			buildPhases = (
+				D9911DA94FDD77F79E1D0FC7 /* [CP] Check Pods Manifest.lock */,
+				B3F766BE1D3D0712006EF124 /* Sources */,
+				B3F766BF1D3D0712006EF124 /* Frameworks */,
+				B3F766C01D3D0712006EF124 /* Resources */,
+				CD9F49006C4A98E41A7DC6C9 /* [CP] Embed Pods Frameworks */,
+				AA905C051CE4990489CC5D14 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRTickets;
+			productName = QRTickets;
+			productReference = B3F766C21D3D0712006EF124 /* QRTickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3F766DD1D3D0712006EF124 /* QRTicketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F766F51D3D0712006EF124 /* Build configuration list for PBXNativeTarget "QRTicketsTests" */;
+			buildPhases = (
+				1EE9521851C494D42F0591C9 /* [CP] Check Pods Manifest.lock */,
+				B3F766DA1D3D0712006EF124 /* Sources */,
+				B3F766DB1D3D0712006EF124 /* Frameworks */,
+				B3F766DC1D3D0712006EF124 /* Resources */,
+				28D65A2FE5AF73617B49B2A8 /* [CP] Embed Pods Frameworks */,
+				7B83235C48A9016119DF269D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F766E01D3D0712006EF124 /* PBXTargetDependency */,
+			);
+			name = QRTicketsTests;
+			productName = QRTicketsTests;
+			productReference = B3F766DE1D3D0712006EF124 /* QRTicketsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3F766E81D3D0712006EF124 /* QRTicketsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F766F81D3D0712006EF124 /* Build configuration list for PBXNativeTarget "QRTicketsUITests" */;
+			buildPhases = (
+				09FD9FC28B5E77CFEB618B53 /* [CP] Check Pods Manifest.lock */,
+				B3F766E51D3D0712006EF124 /* Sources */,
+				B3F766E61D3D0712006EF124 /* Frameworks */,
+				B3F766E71D3D0712006EF124 /* Resources */,
+				80D0E45E1E06BF06660B3F54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F766EB1D3D0712006EF124 /* PBXTargetDependency */,
+			);
+			name = QRTicketsUITests;
+			productName = QRTicketsUITests;
+			productReference = B3F766E91D3D0712006EF124 /* QRTicketsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3F766BA1D3D0712006EF124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ivanov Andrey";
+				TargetAttributes = {
+					B3F766C11D3D0712006EF124 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9QN637E75Q;
+					};
+					B3F766DD1D3D0712006EF124 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B3F766C11D3D0712006EF124;
+					};
+					B3F766E81D3D0712006EF124 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B3F766C11D3D0712006EF124;
+					};
+				};
+			};
+			buildConfigurationList = B3F766BD1D3D0712006EF124 /* Build configuration list for PBXProject "QRTickets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3F766B91D3D0712006EF124;
+			productRefGroup = B3F766C31D3D0712006EF124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3F766C11D3D0712006EF124 /* QRTickets */,
+				B3F766DD1D3D0712006EF124 /* QRTicketsTests */,
+				B3F766E81D3D0712006EF124 /* QRTicketsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3F766C01D3D0712006EF124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F766D81D3D0712006EF124 /* LaunchScreen.storyboard in Resources */,
+				B3F766D51D3D0712006EF124 /* Assets.xcassets in Resources */,
+				B3F766D01D3D0712006EF124 /* Main.storyboard in Resources */,
+				B3C2DC6A1D3E25F30019B619 /* TicketCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F766DC1D3D0712006EF124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F766E71D3D0712006EF124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09FD9FC28B5E77CFEB618B53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1EE9521851C494D42F0591C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28D65A2FE5AF73617B49B2A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRTicketsTests/Pods-QRTicketsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B83235C48A9016119DF269D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRTicketsTests/Pods-QRTicketsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D0E45E1E06BF06660B3F54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRTicketsUITests/Pods-QRTicketsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA905C051CE4990489CC5D14 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRTickets/Pods-QRTickets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9F49006C4A98E41A7DC6C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRTickets/Pods-QRTickets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9911DA94FDD77F79E1D0FC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3F766BE1D3D0712006EF124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C2DC521D3E153A0019B619 /* BaseViewController.m in Sources */,
+				B3F766D31D3D0712006EF124 /* QRTickets.xcdatamodeld in Sources */,
+				B3D4F4751D4756E100A4E24A /* TransactionCell.m in Sources */,
+				B3C2DC561D3E16F00019B619 /* MainViewController.m in Sources */,
+				B329A3781D3D233300422793 /* Helpers.m in Sources */,
+				B3D154751D42779700E8F043 /* Transaction+CoreDataProperties.m in Sources */,
+				B3CCB8981D46033C00066027 /* ChooseTicketViewController.m in Sources */,
+				B3C2DC691D3E25F30019B619 /* TicketCell.m in Sources */,
+				B3D154781D42779700E8F043 /* Ticket.m in Sources */,
+				B3C2DC751D3E4F240019B619 /* Model.m in Sources */,
+				B3D154761D42779700E8F043 /* Transaction.m in Sources */,
+				B3F766CA1D3D0712006EF124 /* AppDelegate.m in Sources */,
+				B3D154771D42779700E8F043 /* Ticket+CoreDataProperties.m in Sources */,
+				B3F766C71D3D0712006EF124 /* main.m in Sources */,
+				B3F766FF1D3D0AF0006EF124 /* DBManager.m in Sources */,
+				B3D4F4721D4752AF00A4E24A /* TransactionsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F766DA1D3D0712006EF124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F766E31D3D0712006EF124 /* QRTicketsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F766E51D3D0712006EF124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F766EE1D3D0712006EF124 /* QRTicketsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3F766E01D3D0712006EF124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3F766C11D3D0712006EF124 /* QRTickets */;
+			targetProxy = B3F766DF1D3D0712006EF124 /* PBXContainerItemProxy */;
+		};
+		B3F766EB1D3D0712006EF124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3F766C11D3D0712006EF124 /* QRTickets */;
+			targetProxy = B3F766EA1D3D0712006EF124 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3F766CE1D3D0712006EF124 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3F766CF1D3D0712006EF124 /* Base */,
+			);
+			name = Main.storyboard;
+			path = QRTickets;
+			sourceTree = "<group>";
+		};
+		B3F766D61D3D0712006EF124 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3F766D71D3D0712006EF124 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3F766F01D3D0712006EF124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3F766F11D3D0712006EF124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3F766F31D3D0712006EF124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799CA7B0CFD86A2CCF69AFFA /* Pods-QRTickets.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/QRTickets-PrefixHeader.pch";
+				INFOPLIST_FILE = QRTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivanovdeveloper.QRTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B3F766F41D3D0712006EF124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F0575E8F13BC12AD928234 /* Pods-QRTickets.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/QRTickets-PrefixHeader.pch";
+				INFOPLIST_FILE = QRTickets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivanovdeveloper.QRTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B3F766F61D3D0712006EF124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5605B5055E183CE6CB2DB0E /* Pods-QRTicketsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QRTicketsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivanovdeveloper.QRTicketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRTickets.app/QRTickets";
+			};
+			name = Debug;
+		};
+		B3F766F71D3D0712006EF124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E18770AC305F54EB98CCF78 /* Pods-QRTicketsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QRTicketsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivanovdeveloper.QRTicketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRTickets.app/QRTickets";
+			};
+			name = Release;
+		};
+		B3F766F91D3D0712006EF124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6AD94CCDF6F7B07220CA192 /* Pods-QRTicketsUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = QRTicketsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivanovdeveloper.QRTicketsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QRTickets;
+			};
+			name = Debug;
+		};
+		B3F766FA1D3D0712006EF124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C972563B7751F78AEA1057 /* Pods-QRTicketsUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = QRTicketsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ivanovdeveloper.QRTicketsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QRTickets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3F766BD1D3D0712006EF124 /* Build configuration list for PBXProject "QRTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F766F01D3D0712006EF124 /* Debug */,
+				B3F766F11D3D0712006EF124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F766F21D3D0712006EF124 /* Build configuration list for PBXNativeTarget "QRTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F766F31D3D0712006EF124 /* Debug */,
+				B3F766F41D3D0712006EF124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F766F51D3D0712006EF124 /* Build configuration list for PBXNativeTarget "QRTicketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F766F61D3D0712006EF124 /* Debug */,
+				B3F766F71D3D0712006EF124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F766F81D3D0712006EF124 /* Build configuration list for PBXNativeTarget "QRTicketsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F766F91D3D0712006EF124 /* Debug */,
+				B3F766FA1D3D0712006EF124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3F766D11D3D0712006EF124 /* QRTickets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3F766D21D3D0712006EF124 /* QRTickets.xcdatamodel */,
+			);
+			currentVersion = B3F766D21D3D0712006EF124 /* QRTickets.xcdatamodel */;
+			path = QRTickets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B3F766BA1D3D0712006EF124 /* Project object */;
+}

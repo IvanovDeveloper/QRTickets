@@ -1,0 +1,18 @@
+//
+//  QRTickets-PrefixHeader.pch
+//  QRTickets
+//
+//  Created by Ivanov Andrey on 7/18/16.
+//  Copyright © 2016 Ivanov Andrey. All rights reserved.
+//
+
+#ifndef QRTickets_PrefixHeader_pch
+#define QRTickets_PrefixHeader_pch
+
+#import "DBManager.h"
+#import "Macroses.h"
+#import "Helpers.h"
+#import "Model.h"
+
+
+#endif /* QRTickets_PrefixHeader_pch */
